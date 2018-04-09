@@ -9,3 +9,4 @@ df.head()
 df['balance'].value_counts()
 
 
+df['balance'] = [1 if b == 'B' else 0 for b in df.balance]
